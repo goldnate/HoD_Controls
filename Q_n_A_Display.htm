@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Question and Answer Session</title>
+<!- Include .css and .js files here -->
+<link rel="stylesheet" type="text/css" href="Q_n_A_Display.css" />
+
+</head>
+<body>
+<div name="container" class="container">
+
+	<div name="the_floor" class="floor" id="TheFloor">
+		<!- This area will be used for the speaker identity, countdown timer, and the speaker's disposition. -->
+		<span id="Instructions">
+		No resolution has been moved. The speaker (after identifying oneself) may:<b><br/>
+		&nbsp;&bull;&nbsp;Ask a Question<br/>
+		&nbsp;&bull;&nbsp;Move a Resolution<br/>
+		&nbsp;&bull;&nbsp;Move to Adjourn<br/></b>
+		</span>
+		
+		<div name="speaker_counter" class="speaker-counter" id="SpeakerCount">
+			<!- Counter for current speaker's allotted time. -->
+			<span name="sc_readout" id="SCReadOut" class="sc-readout">2:00</span>
+			<span name="paused" id="Paused" class="paused"></span>
+			<p id="remains">REMAIN FOR<br />THIS SPEAKER</p>
+		</div> <!- counter -->
+		<div name="floor_options" class="floor-options" id="FloorOptions">
+		</div> <!- floor-options -->
+		
+	</div> <!- the_floor -->
+
+	<div name="privileged_motions" class="privileged" id="PrivilegedMotions">
+		<!- This area will be used to inform members of privileged motions in order and display their action. -->
+		<span style="color: #ff4444;">PRIVILEGED MOTIONS</span> <span style="color: #bbbbbb;">[Any voting member. Any time. Interrupts the speaker.]</span><br/>
+		&nbsp;&bull;&nbsp;POINT OF ORDER - Clarify proper parliamentary procedure.<br/>
+		&nbsp;&bull;&nbsp;POINT OF INFORMATION - Provide or request key facts to clarify the debate.<br/>
+		&nbsp;&bull;&nbsp;POINT OF PERSONAL PRIVILEGE - Respond to a statement made about you.<br/>
+
+		<div name="session_counter" class="session-counter" id="SessionCount">
+			<!- Counter for current session's allotted time. -->
+			<div name="Sess_readout" id="SessReadOut" class="sess-readout">15:00</div>
+			<span name="paused" id="Paused" class="paused"></span>
+			<p id="sess-remains">REMAIN FOR<br />THIS SESSION</p>
+		</div> <!- counter -->
+	
+	</div> <!- privileged_motions -->
+	
+	<div name="the_question" class="question" id="TheQuestion">
+		<!- This area will be used for info on and conveyance of the question before the assembly and to inform members of secondary motions in order. -->
+		<p style="margin-top: 80px; text-align: center; font-weight: bold; font-size: 30pt;">Question & Answer<br/>Session</p>
+		<div id="ResBox" name="res_box" class="res-box">&nbsp;
+			<span name="res_box_disp" id="ResBoxDisp" class="res-box-disp"></span>
+			<div name="res_counter" class="res-counter" id="ResCount">
+				<!- Counter for current session's allotted time. -->
+				<div name="res_readout" id="ResReadOut" class="res-readout"></div>
+				<span name="paused" id="Paused" class="paused"></span>
+				<p id="res-remains"></p>
+				<div id="ResCountInst" class="res-count-inst"></div>
+			</div> <!- counter -->
+
+			<div id="ResDisp" name="res_disp" class="res-disp">
+				&nbsp;
+			</div>
+		</div>
+		<div id="Amend1Box" name="amend1_box" class="amend1-box">&nbsp;
+			<div id="Amend1Disp" name="amend1_disp" class="amend1-disp">
+				&nbsp;
+			</div>
+		</div>
+		<div id="Amend2Box" name="amend2_box" class="amend2-box">&nbsp;
+			<div id="Amend2Disp" name="amend2_disp" class="amend2-disp">
+				&nbsp;
+			</div>
+		</div>
+	</div> <!- the_question -->
+	
+		<div id="privBox" name="priv_box" class="priv-box">
+			<span name="priv_box_disp" id="privBoxDisp" class="priv-box-disp"></span>
+			<div name="priv_counter" class="priv-counter" id="privCount">
+				<!- Counter for privileged speaker's allotted time. -->
+				<div name="priv_readout" id="privReadOut" class="priv-readout"></div>
+				<span name="paused" id="Paused" class="paused"></span>
+				<p id="priv-remains"></p>
+				<div id="privCountInst" class="priv-count-inst"></div>
+			</div> <!- counter -->
+
+			<div id="privDisp" name="priv_disp" class="priv-disp">
+				&nbsp;
+			</div>
+		</div>
+		<div name="mo_process" class="mo-process" id="Process">
+					
+		</div> <!- mo_process -->
+		
+</div> <!- container -->
+
+</body>
+</html>

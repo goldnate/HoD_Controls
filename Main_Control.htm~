@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Main Controller</title>
+<script type="text/javascript">
+var Display=window.open('Main_Display.htm','Display','titlebar=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,height=600,width=800,top=0,left=1600');
+var Preview=window.open('Main_Preview.htm','Preview','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,height=600,width=800,top=0,left=100');
+</script>
+<script type="text/javascript" src="Q_n_A_CountDown_sess.js"></script>
+<script type="text/javascript" src="Q_n_A_CountDown_sc.js"></script>
+<script type="text/javascript" src="Main_CountDown_res.js"></script>
+<script type="text/javascript" src="Q_n_A_CountDown_priv.js"></script>
+<script type="text/javascript" src="Q_n_A_Message_Box.js"></script>
+</head>
+<body bgcolor="#206020">
+			<form name="res_Cont">
+				<input type="button" onclick="window.open('PreQ_n_A_Controller.htm','Control','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,height=600,width=800,top=0,left=100')" value="Early Q &amp; A Controller" name="res_Content_button" ><br />&nbsp;<br />
+				<input type="button" onclick="window.open('Reports_Control.htm','Control','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,height=600,width=800,top=0,left=100')" value="Early Q &amp; A Controller" name="res_Content_button" ><br />&nbsp;<br />
+				<input type="button" onclick="prev_text_disp(document.res_Cont.res_Content.value)" value="Blank" name="prev_Content_button" ><br/>
+			</form>
+</body>
+</html>
